@@ -14,7 +14,7 @@ Watch the [demo video here](https://youtu.be/QAbOHhjo05U).
 * this repository
 
 ##### Install OpenHAB HomeKit Bridge:
-On non OS X systems install the avahi library:
+On non OS X posix systems install the avahi library:
   ```js
   sudo apt-get install libavahi-compat-libdnssd-dev
   ```
@@ -22,6 +22,8 @@ Install the node module dependencies:
   ```js
   npm install
   ```
+  
+On Windows install the OpenSSL binary distribution to its default install location (c:\OpenSSL-Win32 for 32-bit and OpenSSL-Win64 for 64-bit) from https://www.openssl.org/related/binaries.html
 
 ##### Run OpenHAB HomeKit Bridge
 This connects to OpenHAB at 192.168.0.99 on port 8080 and loads all items from a sitemap named 'demo.sitemap':
